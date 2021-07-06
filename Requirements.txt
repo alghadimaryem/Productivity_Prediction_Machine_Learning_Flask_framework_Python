@@ -1,0 +1,21 @@
+Les Librairies nécessaires(dépendances)
+___________________________________________________________________________________
+Flask 2.0.1 :
+=> Framework open-source de développement web en python
+
+numpy 1.20.3 :
+=>manipuler des matrices ou tableaux multidimensionnels ainsi que des fonctions mathématiques opérant sur ces tableaux.
+
+pandas 1.2.4 : 
+=> Elle permet la manipulation et l'analyse des données. 
+=> Elle propose des structures de données et des opérations de manipulation de tableaux numériques et de séries temporelles.
+
+matplotlib 3.4.2 :
+=> pour tracer et visualiser des données sous formes de graphiques.
+
+scikit-learn 0.24.2 : 
+=> Elle contient plusieurs outils efficaces pour la machine learning et la modélisation statistique comprenant la classification,la regression...
+
+pip 21.1.2 :
+=> Pour installer les fichiers et les bibliothèques python.
+

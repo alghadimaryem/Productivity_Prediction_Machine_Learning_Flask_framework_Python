@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>K Nearest Neighbours Algorithm (KNN)</title>
+    <link href="{{ url_for('static',filename='css/template.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet">
+
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <center><h1> K Nearest Neighbours </h1></center>
+  <center>
+        <form action = "{{ url_for('predict3') }}" method="POST" class="text-center border border-light p-5" >
+        <table>
+          <tr>
+            <th>team</th>
+            <th>targetedproductivity</th>
+            <th>smv</th>
+            <th>wip</th>
+            <th>overtime</th>
+            <th>insentive</th>
+            <th>idle time</th>
+            <th>idle men</th>
+            <th>number of style</th>
+            <th>nworkers</th>
+            <th>actualproductivity</th>
+          </tr>
+        <tr>
+           <th><input name = "team" type="float" placeholder="Enter team" style="width:80px"  ></th>
+            <th><input name = "targetedproductivity" type="float" class="form-control mb-4" placeholder="Enter targeted productivity" style="width:80px"></th>
+            <th><input name = "smv" type="float" placeholder="Enter smv" style="width:80px"></th>
+            <th><input name = "wip" type="float" placeholder="Enter wip" style="width:80px"></th>
+            <th><input name = "overtime" type="float" placeholder="Enter overtime" style="width:80px"></th>
+            <th><input name = "insentive" type="float" placeholder="Enter insentive"style="width:80px"></th>
+            <th><input name = "idletime" type="float" placeholder="Enter idle time"style="width:80px" ></th>
+            <th><input name = "idlemen" type="float" placeholder="Enter idle men" style="width:80px"></th>
+            <th><input name = "numberofstyle" type="float" placeholder="Enter number of style" style="width:80px"></th>
+            <th><input name = "nworkers" type="float" placeholder="Enter nworkers" style="width:80px"></th>
+            <th><input name = "actualproductivity" type="float" placeholder="Enter actual productivity" style="width:80px"></th>
+
+          </tr>
+        </table>
+            <br>
+          <button type="submit"style="width:300px">Submit</button>
+      </form></center>
+
+    {% endblock %}
+  </body>
+</html>

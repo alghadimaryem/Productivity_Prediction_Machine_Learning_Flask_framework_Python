@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>Flask Parent Template</title>
+   <link href="{{ url_for('static',filename='css/template.css') }}" rel="stylesheet">
+ </head>
+ <body>
+ <div class="wrapper">
+         <input type="checkbox" id="btn" hidden>
+         <label for="btn" class="menu-btn" >||||
+         <i class="fas fa-bars"></i>
+         <i class="fas fa-times"></i>
+         </label>
+         <nav id="sidebar">
+            <div class="title">
+               Algorithms
+            </div>
+            <ul class="list-items">
+                <li><h3> Algorithmes de Classification</h2></li>
+               <li><a href="{{ url_for('randomforest') }}"><i class="fas fa-home"></i>Random Forest Algorithm</a></li>
+               <li><a href="{{ url_for('logisticreg') }}"><i class="fas fa-sliders-h"></i>Logistic Regression Algorithm</a></li>
+               <li><a href="{{ url_for('knearest') }}"><i class="fas fa-address-book"></i>K Nearest Neighbours Algorithm (KNN)</a></li>
+               <li><a href="{{ url_for('gradient') }}"><i class="fas fa-cog"></i>Gradient Boosting Classifier</a></li>
+               <li><a href="{{ url_for('decisiontree') }}"><i class="fas fa-stream"></i>Decision Tree Algorithm</a></li>
+               <li><a href="{{ url_for('naivebayes') }}"><i class="fas fa-user"></i>Naive Bayes Algorithm</a></li>
+               <li><a href="{{ url_for('vectormachine') }}"><i class="fas fa-globe-asia"></i>Support Vector Machine Algorithm</a></li>
+                <li><h3> Algorithmes de Regression</h3></li>
+
+                <li><a href="{{ url_for('linearreg') }}"><i class="fas fa-globe-asia"></i>Linear Regression</a></li>
+
+            </ul>
+         </nav>
+      </div>
+
+    {% block content %}
+
+    {% endblock %}
+ </body>
+</html>
+
+
